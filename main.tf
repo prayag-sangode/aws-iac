@@ -16,6 +16,10 @@ terraform {
 resource "aws_instance" "example" {
   ami           = "ami-0c94855ba95c71c99"  # Replace with your desired AMI ID
   instance_type = "t2.micro"
+
+  tags = {
+    Name = "DevOpsDemoInstance"
+  }
 }
 
 output "instance_public_ip" {
