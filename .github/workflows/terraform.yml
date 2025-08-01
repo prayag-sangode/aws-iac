@@ -2,7 +2,7 @@ name: 'AWS IaC using Terraform'
 
 on:
   push:
-    branches: [ "main1" ]
+    branches: [ "main" ]
   pull_request:
 
 permissions:
@@ -41,4 +41,4 @@ jobs:
 
       # On push to "main", build or change infrastructure according to Terraform configuration files
     - name: Terraform Apply
-      run: terraform destroy -auto-approve
+      run: terraform apply -auto-approve
