@@ -4,11 +4,11 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "tfstate-bucket19159"
-    key            = "terraform.tfstate"
+    bucket         = "aws-iac-19159-tf"
+    key            = "terraform.tfstate-gha"
     region         = "us-east-1"
     encrypt        = true
-    use_lockfile = true
+    use_lockfile   = true
   }
 }
 
