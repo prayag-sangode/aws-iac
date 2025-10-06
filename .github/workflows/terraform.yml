@@ -41,4 +41,4 @@ jobs:
 
       # On push to "main", build or change infrastructure according to Terraform configuration files
     - name: Terraform Apply
-      run: terraform apply -auto-approve
+      run: terraform detroy -auto-approve
